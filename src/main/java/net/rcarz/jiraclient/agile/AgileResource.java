@@ -276,6 +276,10 @@ public abstract class AgileResource {
     public Object getAttribute(String name) {
         return attributes.get(name);
     }
+    
+    public JSONObject getAttributes() {
+        return attributes;
+    }
 
     /**
      * Deserialize the json to extract standard attributes and keep a reference of
